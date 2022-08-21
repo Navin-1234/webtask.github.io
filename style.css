@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0, 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+.img img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.content h2 {
+    color: grey;
+
+}
+
+.content h1 {
+    color: rgb(2, 2, 10);
+}
+
+.content::after {
+    content: '';
+    width: 10px;
+    height: 50%;
+    background: linear-gradient(#7b7575ce, #050501);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.content {
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-right: 50px;
+    flex-basis: 40%;
+    position: relative;
+    min-width: fit-content;
+}
+
+
+.A {
+    background-color: white;
+    display: flex;
+
+}
+
+.home {
+    width: 100%;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.icon a {
+    padding: 10px;
+}
+
+.about {
+    margin-left: 250px;
+    margin-top: 45px;
+    display: flex;
+    line-height: 30px;
+}
+
+.Z {
+    background-color: lightblue;
+    width: 100%;
+}
+
+.Y {
+    background-color: black;
+    width: 100%;
+}
+
+
+* {
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #333;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+}
+
+.skills-bar {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+    margin-top: 50px;
+}
+
+.skills-bar .bar {
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0px;
+
+}
+
+.skills-bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0, 0.05),
+        0px rgba(255, 255, 255, 0.8);
+
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1.5s 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.my-work {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.my-work .row {
+    justify-content: center;
+}
+
+.my-work .row a {
+    text-decoration: none;
+}
+
+.row img {
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes animate {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.progress-line.HTML span {
+    width: 95%;
+}
+
+.progress-line.CSS span {
+    width: 65%;
+}
+
+.progress-line.Javascript span {
+    width: 55%;
+}
+
+.progress-line.jquery span {
+    width: 45%;
+}
+
+.progress-line.bootstrap span {
+    width: 50%;
+}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.HTML span::after {
+    content: "95%";
+}
+
+.progress-line.CSS span::after {
+    content: "65%";
+}
+
+.progress-line.Javascript span::after {
+    content: "75%";
+}
+
+.progress-line.jquery span::after {
+    content: "80%";
+}
+
+.progress-line.bootstrap span::after {
+    content: "95%";
+}
+
+The CSS part
+/* Importing the Roboto font from Google Fonts. */
+
+
+/* Set font of all elements to 'Roboto' */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+    outline: 0;
+}
+
+body {
+    background: #263238;
+    /* Set background color to #263238*/
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Add styles to 'container' class */
+.container {
+    padding: 12px 24px 24px 24px;
+    margin: 28px 48px;
+    background: #E3F2FD;
+    border-radius: 4px;
+
+}
+
+/* Add styles to 'label' selector */
+label {
+    font-size: 0.85em;
+    margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+    background: #64B5F6;
+    margin: 0 Auto;
+    outline: 0;
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+    background: #A5D6A7;
+    color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+    background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+    text-align: center;
+}
+
+
+
+.Q {
+    background-color: aliceblue;
+    height: 200px;
+    width: 100%;
+    padding: 55px;
+}
+
+
+
+@media (max-width:1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+
+    }
+
+    nav a {
+        font-size: 17px;
+
+    }
+}
+
+@media (max-width:909px) {
+    nav #icon {
+        display: block;
+
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav a {
+        font-size: 20px;
+
+    }
+
+    a.active,
+    a:hover {
+        border: 0;
+        color: #3498db;
+
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 150px;
+        line-height: 50px;
+    }
+
+    .skill {
+        margin-top: 75px;
+    }
+}
